@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common'
+import { OrderModule } from 'ngx-order-pipe';
+import { PostTemaComponent } from './post-tema/post-tema.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common'
     FeedComponent,
     PerfilLateralComponent,
     LoginComponent,
-    CadastroComponent
+    CadastroComponent,
+    PostTemaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule    
+    FormsModule,
+    OrderModule    
   ],
   providers: [{
     provide: LocationStrategy,
